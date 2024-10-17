@@ -1,0 +1,35 @@
+These are the Visual C++ files.  I have also supplied
+several "saved cases" (pull these up through "File...Open...") that 
+have the correct parameters from the papers and have names corresponding
+to the behavior (state, # spikes/burst for bursters, burst or spiking 
+frequency for bursters and tonic, average voltage for silent cells).  I
+usually put these in a separate folder from the C++ code files.  The
+"res" folder should also be a separate folder sitting in the same location
+as all the .cpp and .h files.  I am also attaching the .exe file in case 
+you have trouble setting up the Visual C++ stuff and compiling it yourself--
+usually this would be generated into a folder entitled "Release" (or "Debug"
+if you compiled a slower-running debug version of the code).
+
+For the C++ files, start yourself off by opening up the ".dsw" 
+file which should then find all the other files.
+
+One feature you should know of: the windows will "remember" their
+sizes and locations on the screen after you quit, so once you set
+them up the way you like, they should always appear that way on the
+screen.  However, if you switch to a new monitor or every once in a
+while when windows goes crazy, they will get so messed up that you
+can't grab a corner of them to resize them back to where you like.
+In this case, go to "MainFrm.cpp" and comment out the
+"RestoreWindowState" lines, then run the program and set up the
+windows how you like them, then "un-comment" the "RestoreWindowState"
+lines back in.  Hopefully, you'll never have to know this, but you
+should save this information somewhere in case it goes crazy.
+
+Also, the "h or proctolin" channel is "smart" in the sense that
+it knows if you have only an inactivation but no activation (Num_h=1,
+Num_m=0), then it will use the "h" channel kinetics.  Likewise, if you
+only have an activation but no inactivation (Num_h=0, Num_m=1), it will
+use the proctolin channel kinetics.
+
+The channel kinetics are in the file "Channel.cpp".
+

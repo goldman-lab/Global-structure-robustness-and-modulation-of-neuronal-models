@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ZhengModel - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\TEMP\RSP3.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:".\Release/ZhengModel.pdb" /machine:I386 /out:".\Release/ZhengModel.exe" 
+".\Release\Channel.obj"
+".\Release\ChildFrm.obj"
+".\Release\Compartment.obj"
+".\Release\DisplayPage.obj"
+".\Release\GlobalFncs.obj"
+".\Release\MainFrm.obj"
+".\Release\Mark_math.obj"
+".\Release\Neuron.obj"
+".\Release\NeuronPage.obj"
+".\Release\plot.obj"
+".\Release\PlotsDialog.obj"
+".\Release\RunPage.obj"
+".\Release\Sensor.obj"
+".\Release\StdAfx.obj"
+".\Release\Synapse.obj"
+".\Release\TabCtrls.obj"
+".\Release\ZhengModel.obj"
+".\Release\ZhengModelDoc.obj"
+".\Release\ZhengModelView.obj"
+".\Release\ZhengModel.res"
+]
+Creating command line "link.exe @C:\TEMP\RSP3.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+ZhengModel.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
